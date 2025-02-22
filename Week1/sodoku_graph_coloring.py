@@ -2,6 +2,14 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 
+"""
+This file puts into practical use some of the graph theory fundamentals I'm relearning.
+Putting them into code and applying it to CS problems is exactly the foundation needed 
+throughout the rest of this ISR. This problem specifically solves sodoku using a 9 
+coloring of a graph representation of the board.
+"""
+
+
 class SudokuGraphSolver:
     def __init__(self):
         self.board_size = 9
@@ -191,7 +199,6 @@ class SudokuGraphSolver:
         return None
 
 
-# Let's use our solver
 solver = SudokuGraphSolver()
 
 print("Generating initial Sudoku board...")
